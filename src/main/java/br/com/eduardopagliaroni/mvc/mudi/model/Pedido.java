@@ -75,7 +75,5 @@ public class Pedido {
 				+ ", dataEntrega=" + dataEntrega + ", urlProduto=" + urlProduto + ", urlImagem=" + urlImagem
 				+ ", descricao=" + descricao + "]";
 	}
-	
-	
-
+ 
 }
