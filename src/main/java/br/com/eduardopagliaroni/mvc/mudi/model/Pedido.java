@@ -69,4 +69,13 @@ public class Pedido {
 		this.descricao = descricao;
 	}
 
+	@Override
+	public String toString() {
+		return "Pedido [id=" + id + ", nomeProduto=" + nomeProduto + ", valorNegociado=" + valorNegociado
+				+ ", dataEntrega=" + dataEntrega + ", urlProduto=" + urlProduto + ", urlImagem=" + urlImagem
+				+ ", descricao=" + descricao + "]";
+	}
+	
+	
+
 }
