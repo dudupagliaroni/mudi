@@ -1,11 +1,16 @@
 package br.com.eduardopagliaroni.mvc.mudi.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import br.com.eduardopagliaroni.mvc.mudi.model.Pedido;
 
-public class RequisiçãoNovoPedido {
+public class RequisicaoNovoPedido {
 
+	@NotBlank
 	private String nomeProduto;
+	@NotBlank
 	private String urlProduto;
+	@NotBlank
 	private String urlImage;
 	private String descricao;
 
