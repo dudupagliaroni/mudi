@@ -15,7 +15,7 @@ import br.com.eduardopagliaroni.mvc.mudi.model.StatusPedido;
 import br.com.eduardopagliaroni.mvc.mudi.repository.PedidoRepository;
 
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/")
 public class HomeController {
 
 	@Autowired
@@ -38,7 +38,7 @@ public class HomeController {
 
 	@ExceptionHandler(IllegalArgumentException.class)
 	public String onError() {
-		return "redirect:/home";
+		return "redirect:/";
 	}
 	
 
