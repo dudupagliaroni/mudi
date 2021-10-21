@@ -11,7 +11,7 @@
         <form
           th:object="${requisicaoNovoPedido}"
           class="card-body"
-          action="/pedido/novo"
+          th:action="@{/pedido/novo}"
           method="POST"
         >
           <div class="form-group mb-2">

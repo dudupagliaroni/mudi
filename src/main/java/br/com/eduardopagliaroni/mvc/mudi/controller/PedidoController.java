@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.eduardopagliaroni.mvc.mudi.dto.RequisicaoNovoPedido;
 import br.com.eduardopagliaroni.mvc.mudi.model.Pedido;
+import br.com.eduardopagliaroni.mvc.mudi.model.User;
 import br.com.eduardopagliaroni.mvc.mudi.repository.PedidoRepository;
 import br.com.eduardopagliaroni.mvc.mudi.repository.UserRepository;
 
@@ -37,9 +38,10 @@ public class PedidoController {
 		}
 		
 		String username = SecurityContextHolder.getContext().getAuthentication().getName();
-		
+		User user = userRepository.findByUsername(username);
 		
 		Pedido pedido = requisicao.toPedido();
+		pedido.setUser(user);
 		pedidoRepository.save(pedido);
 		System.out.println(pedido);
 		return "redirect:/home";
