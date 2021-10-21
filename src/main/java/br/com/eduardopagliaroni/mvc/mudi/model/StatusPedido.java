@@ -4,6 +4,5 @@ public enum StatusPedido {
 	
 	AGUARDANDO, APROVADO, ENTREGUE;
 	
-//	testando
 
 }
