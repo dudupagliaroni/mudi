@@ -13,6 +13,5 @@ public class LoginController {
 		return "login";
 	}
 	
-	//teste
 
 }
